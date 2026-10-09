@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>Mohammed Nihal &bull; Web &amp; Mobile Application Developer</title>
+  <meta name="description" content="Portfolio of Mohammed Nihal - Web & Mobile Application Developer specializing in Python, Django, Android, Bootstrap, and PHP." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=Great+Vibes&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Floating Toast Notification for Clipboard Copies -->
+  <div class="toast-popup" id="toastNotice">Copied to clipboard!</div>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar">
+    <div class="container navbar__inner">
+      <a href="#home" class="logo">
+        <svg class="logo__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <path d="M4 4l8 8-8 8M12 4l8 8-8 8" />
+        </svg>
+        <span>NIHAL<span class="gold-text">.DEV</span></span>
+      </a>
+
+      <nav class="nav__links" id="navLinks">
+        <a href="#home" class="is-active">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#skills">STACK</a>
+        <a href="#portfolio">PROJECTS</a>
+        <a href="#experience">JOURNEY</a>
+        <a href="#terminal-section">TERMINAL</a>
+        <a href="#contact">CONTACT</a>
+      </nav>
+
+      <div class="navbar__action-group">
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/mohammed-nihal-mt-a9a15a426" target="_blank" rel="noopener" class="nav-social-btn" title="LinkedIn Profile">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+          </svg>
+        </a>
+        <!-- GitHub -->
+        <a href="https://github.com/Nihalmt123" target="_blank" rel="noopener" class="nav-social-btn" title="GitHub Profile">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+        </a>
+        <a href="#contact" class="btn btn--outline-pill navbar-contact-btn">
+          <span>Contact</span>
+          <span class="arrow">&rarr;</span>
+        </a>
+      </div>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <canvas id="particlesCanvas" class="hero__particles-canvas"></canvas>
+      <div class="hero__grid-overlay"></div>
+      <div class="hero__bg-overlay"></div>
+      
+      <div class="container hero__content">
+        <!-- Live Status Pill -->
+        <div class="hero__status-pill">
+          <span class="live-pulse"></span>
+          <span>Open to Internship Opportunities &bull; Kerala / Remote</span>
+        </div>
+
+        <!-- Candidate Title -->
+        <h1 class="hero__title">
+          Hi, I'm <span class="gold-text">Mohammed Nihal</span>
+        </h1>
+
+        <!-- Subtitle -->
+        <p class="hero__tagline-text">
+          Web &amp; Mobile Application Developer
+        </p>
+
+        <!-- Statement Box -->
+        <div class="hero__statement-box">
+          <p class="hero__statement-para">
+            I’m a passionate developer focused on building responsive, user-friendly, and efficient web and mobile applications. I enjoy turning ideas into practical digital solutions while continuously improving my technical and problem-solving skills.
+          </p>
+          <p class="hero__statement-para">
+            I’m currently seeking an internship opportunity with a forward-thinking organization where I can gain real-world industry experience, contribute to meaningful projects, and grow as a professional developer.
+          </p>
+          <div class="hero__statement-motto-wrap">
+            <span class="motto-gold-bar"></span>
+            <p class="hero__statement-motto">
+              Let’s create innovative solutions together.
+            </p>
+          </div>
+        </div>
+
+        <!-- Direct Actions -->
+        <div class="hero__actions">
+          <a 
+            href="https://drive.google.com/file/d/1hJBpdfDP-Bl9GJZptfMCs0BMhOn45MCp/view?usp=sharing" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="btn btn--gold hero-btn"
+          >
+            <span>Download Resume</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          </a>
+
+          <a 
+            href="https://www.linkedin.com/in/mohammed-nihal-mt-a9a15a426" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="btn btn--outline-pill hero-btn"
+          >
+            <span>LinkedIn Profile</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+            </svg>
+          </a>
+
+          <a 
+            href="https://github.com/Nihalmt123" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="btn btn--outline-pill hero-btn"
+          >
+            <span>GitHub Profile</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__mouse-scroll">
+        <div class="mouse-icon"><div class="mouse-wheel"></div></div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ME ============ -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="about-card">
+          <div class="about-card__media">
+            <div class="gold-frame">
+              <img 
+                src="images/profile.png.PNG" 
+                alt="Mohammed Nihal MT" 
+                class="about-img" 
+                onerror="handleProfileFallback(this)"
+              />
+              <div class="profile-vector-fallback" id="profileVector">
+                <div class="avatar-head"></div>
+                <div class="avatar-suit"></div>
+                <span class="avatar-label">Mohammed Nihal MT</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-card__info">
+            <span class="sub-label">CANDIDATE OVERVIEW</span>
+            <h2>About Me</h2>
+            <p class="about-desc">
+              Third-year B.Voc student in Mobile Application Development at Amal College (University of Calicut) with industrial internship training in Python and Django at Luminar Technolab, Calicut. Proficient across Python, Django, Java, Android Studio, PHP, SQL, MySQL, MongoDB, HTML5, CSS3, and Bootstrap. Dedicated to engineering robust web backends, normalized database architectures, and responsive user interfaces.
+            </p>
+
+            <div class="details-table">
+              <div class="detail-row">
+                <span class="col-label">Full Name</span>
+                <span class="col-colon">:</span>
+                <span class="col-val">Mohammed Nihal MT</span>
+              </div>
+              <div class="detail-row">
+                <span class="col-label">LinkedIn</span>
+                <span class="col-colon">:</span>
+                <span class="col-val"><a href="https://www.linkedin.com/in/mohammed-nihal-mt-a9a15a426" target="_blank" rel="noopener" class="gold-link">in/mohammed-nihal-mt-a9a15a426</a></span>
+              </div>
+              <div class="detail-row">
+                <span class="col-label">GitHub</span>
+                <span class="col-colon">:</span>
+                <span class="col-val"><a href="https://github.com/Nihalmt123" target="_blank" rel="noopener" class="gold-link">github.com/Nihalmt123</a></span>
+              </div>
+              <div class="detail-row">
+                <span class="col-label">Degree</span>
+                <span class="col-colon">:</span>
+                <span class="col-val">B.Voc in Mobile App Dev (3rd Year)</span>
+              </div>
+              <div class="detail-row">
+                <span class="col-label">University</span>
+                <span class="col-colon">:</span>
+                <span class="col-val">University of Calicut (Amal College)</span>
+              </div>
+              <div class="detail-row">
+                <span class="col-label">Location</span>
+                <span class="col-colon">:</span>
+                <span class="col-val">Manjeri, Malappuram, Kerala, India</span>
+              </div>
+              <div class="detail-row">
+                <span class="col-label">Phone</span>
+                <span class="col-colon">:</span>
+                <span class="col-val"><a href="tel:+918129587568" class="gold-link">+91 8129 58 7568</a></span>
+              </div>
+              <div class="detail-row">
+                <span class="col-label">Email</span>
+                <span class="col-colon">:</span>
+                <span class="col-val"><a href="mailto:nihalmt.dev@gmail.com" class="gold-link">nihalmt.dev@gmail.com</a></span>
+              </div>
+            </div>
+
+            <div class="about-actions">
+              <div class="about-cv-button-group">
+                <a 
+                  href="https://drive.google.com/file/d/1hJBpdfDP-Bl9GJZptfMCs0BMhOn45MCp/view?usp=sharing" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  class="btn btn--gold"
+                >
+                  <span>Download Resume</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                </a>
+              </div>
+
+              <!-- Native Vector Signature -->
+              <div class="nihal-vector-sign" title="Mohammed Nihal Signature">
+                <svg viewBox="0 0 420 180" class="sign-svg" fill="none" stroke="currentColor">
+                  <path d="M 45 130 C 40 85, 52 75, 62 100 C 72 125, 80 80, 102 78 C 115 76, 128 92, 134 125" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M 148 65 L 145 145" stroke-width="7.5" stroke-linecap="round" />
+                  <path d="M 50 142 C 100 135, 140 130, 245 105 L 395 125" stroke-width="6" stroke-linecap="round" />
+                  <path d="M 175 95 L 205 135" stroke-width="6.5" stroke-linecap="round" />
+                  <path d="M 170 125 L 205 85" stroke-width="6.5" stroke-linecap="round" />
+                  <path d="M 145 130 C 130 168, 175 180, 195 160 C 215 140, 210 100, 205 110" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS / STACK FILTER ============ -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="sub-label">CORE COMPETENCIES</span>
+          <h2>Technical Architecture &amp; Stack</h2>
+        </div>
+
+        <!-- Filter Chips with Interactive Category Targeting -->
+        <div class="skills-filter-bar">
+          <button type="button" class="stack-filter-chip is-active" data-filter="all" onclick="filterSkills('all', this)">All Technologies</button>
+          <button type="button" class="stack-filter-chip" data-filter="frontend" onclick="filterSkills('frontend', this)">Frontend &amp; UI</button>
+          <button type="button" class="stack-filter-chip" data-filter="python" onclick="filterSkills('python', this)">Python &bull; Django</button>
+          <button type="button" class="stack-filter-chip" data-filter="mobile" onclick="filterSkills('mobile', this)">Java &bull; Android</button>
+          <button type="button" class="stack-filter-chip" data-filter="database" onclick="filterSkills('database', this)">Databases &amp; SQL</button>
+        </div>
+
+        <!-- Skills Grid with Matching data-category Attributes -->
+        <div class="skills-grid" id="skillsGrid">
+          <div class="tool-card" data-category="frontend">
+            <div class="tool-card__icon">&lt;/&gt;</div>
+            <h3>HTML5, CSS3 &amp; Bootstrap</h3>
+            <p>Semantic markup structuring, responsive grid systems, accessible UI workflows, and modern styling.</p>
+          </div>
+
+          <div class="tool-card" data-category="frontend">
+            <div class="tool-card__icon">JS</div>
+            <h3>JavaScript</h3>
+            <p>Asynchronous operations, DOM manipulation, client-side validation logic, and event handling.</p>
+          </div>
+
+          <div class="tool-card" data-category="python">
+            <div class="tool-card__icon">&#128013;</div>
+            <h3>Python</h3>
+            <p>Server-side programming, algorithmic scripting, OOP design patterns, and backend software engineering.</p>
+          </div>
+
+          <div class="tool-card" data-category="python">
+            <div class="tool-card__icon">Dj</div>
+            <h3>Django Framework</h3>
+            <p>Model-View-Template (MVT) architecture, schema migrations, ORM modeling, secure auth, and REST concepts.</p>
+          </div>
+
+          <div class="tool-card" data-category="mobile">
+            <div class="tool-card__icon">&#9749;</div>
+            <h3>Java Development</h3>
+            <p>Class inheritance, modular object-oriented architecture, and structured algorithmic design.</p>
+          </div>
+
+          <div class="tool-card" data-category="mobile">
+            <div class="tool-card__icon">&#128241;</div>
+            <h3>Android Studio</h3>
+            <p>Native mobile application workflows, XML layout structuring, Activity lifecycles, and Android mobile UI.</p>
+          </div>
+
+          <div class="tool-card" data-category="database">
+            <div class="tool-card__icon">SQL</div>
+            <h3>SQL / MySQL</h3>
+            <p>Relational table normalization, complex multi-table joins, indexing, and transactional database integrity.</p>
+          </div>
+
+          <div class="tool-card" data-category="database">
+            <div class="tool-card__icon">&#127811;</div>
+            <h3>MongoDB &amp; NoSQL</h3>
+            <p>Document-based storage schemas, JSON document querying, collections, and non-relational database design.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PORTFOLIO / PROJECTS (DIRECT GITHUB REPO LINKS) ============ -->
+    <section class="section portfolio-section" id="portfolio">
+      <div class="container">
+        <div class="portfolio-header">
+          <div>
+            <span class="sub-label">VERIFIED ENGINEERING WORK</span>
+            <h2>Production &amp; Academic Projects</h2>
+          </div>
+          <a href="https://github.com/Nihalmt123" target="_blank" rel="noopener" class="view-all-link">
+            <span>View All on GitHub</span>
+            <span class="arrow">&rarr;</span>
+          </a>
+        </div>
+
+        <div class="portfolio-grid" id="projectCardsGrid">
+          <!-- 1st Project: Travel & Tourism -->
+          <article class="project-box" data-tags="django python database">
+            <a 
+              href="https://github.com/Nihalmt123/Travel-and-Tourism-System" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="project-box__preview"
+            >
+              <img 
+                src="images/tarvel profile.avif" 
+                alt="Travel And Tourism System" 
+                class="project-image"
+                onerror="this.style.display='none'; document.getElementById('posterTravel').style.display='flex';"
+              />
+              <div class="poster-canvas poster--travel" id="posterTravel">
+                <div class="poster-travel-sea">
+                  <span class="poster-title-script">time to Travel</span>
+                  <span class="poster-pill">4 NIGHT - 5 DAYS</span>
+                </div>
+                <div class="poster-plane-window">
+                  <div class="poster-island"></div>
+                  <span class="plane-sym">&#9992;</span>
+                  <span class="heart-sym red">&hearts;</span>
+                  <span class="heart-sym yellow">&hearts;</span>
+                  <span class="heart-sym blue">&hearts;</span>
+                </div>
+                <div class="poster-travel-sand">
+                  <span class="poster-btn-mini">OPEN REPOSITORY</span>
+                </div>
+              </div>
+              <span class="live-pill-badge">&UpperRightArrow; View  on GitHub</span>
+            </a>
+            <div class="project-box__footer">
+              <div>
+                <span class="project-cat">Django / Python &bull; Internship Flagship</span>
+                <h3>
+                  <a href="https://github.com/Nihalmt123/Travel-and-Tourism-System" target="_blank" rel="noopener noreferrer">
+                    Travel And Tourism System
+                  </a>
+                </h3>
+                <p>Developed a web-based system to explore travel destinations, view tour packages, and book holiday trips. It provides an easy way to manage travel packages and booking details.</p>
+              </div>
+              <a 
+                href="https://github.com/Nihalmt123/Travel-and-Tourism-System" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="circle-btn" 
+                aria-label="View Travel and Tourism System repository on GitHub"
+              >&rarr;</a>
+            </div>
+          </article>
+
+          <!-- 2nd Project: Student Record -->
+          <article class="project-box" data-tags="php database">
+            <a 
+              href="https://github.com/Nihalmt123/Student-Record-Management-System" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="project-box__preview"
+            >
+              <img 
+                src="images/Student-Management-System profile.webp" 
+                alt="Student Record Management System" 
+                class="project-image"
+                onerror="this.style.display='none'; document.getElementById('posterStudent').style.display='flex';"
+              />
+              <div class="poster-canvas poster--student" id="posterStudent">
+                <div class="student-left-photo">
+                  <div class="student-head"></div>
+                  <div class="student-folder"></div>
+                </div>
+                <div class="student-right-copy">
+                  <div class="student-icon-sym">&#127891;</div>
+                  <h3>STUDENT</h3>
+                  <h4>MANAGEMENT SYSTEM</h4>
+                </div>
+              </div>
+              <span class="live-pill-badge">&UpperRightArrow; View  on GitHub</span>
+            </a>
+            <div class="project-box__footer">
+              <div>
+                <span class="project-cat">PHP / MySQL &bull; Academic Portal</span>
+                <h3>
+                  <a href="https://github.com/Nihalmt123/Student-Record-Management-System" target="_blank" rel="noopener noreferrer">
+                    Student Record System
+                  </a>
+                </h3>
+                <p>Developed a system to store and manage student information, academic records, and examination marks. The system allows users to add, update, view, and organize student details efficiently.</p>
+              </div>
+              <a 
+                href="https://github.com/Nihalmt123/Student-Record-Management-System" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="circle-btn" 
+                aria-label="View Student Record System repository on GitHub"
+              >&rarr;</a>
+            </div>
+          </article>
+
+          <!-- 3rd Project: Blood Donation -->
+          <article class="project-box" data-tags="php database">
+            <a 
+              href="https://github.com/Nihalmt123/Blood-Donation-Sysytem" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="project-box__preview"
+            >
+              <img 
+                src="images/blood profile.avif" 
+                alt="Blood Donation Management System" 
+                class="project-image"
+                onerror="this.style.display='none'; document.getElementById('posterBlood').style.display='flex';"
+              />
+              <div class="poster-canvas poster--blood" id="posterBlood">
+                <div class="blood-drop-shape">
+                  <div class="blood-hand-sym">&#9995;</div>
+                </div>
+                <div class="blood-text-banner">
+                  <span class="blood-t1">BLOOD</span>
+                  <span class="blood-t2">DONATION</span>
+                  <span class="blood-t3">Save Life &hearts;</span>
+                </div>
+              </div>
+              <span class="live-pill-badge">&UpperRightArrow; View  on GitHub</span>
+            </a>
+            <div class="project-box__footer">
+              <div>
+                <span class="project-cat">PHP / MySQL &bull; Healthcare Portal</span>
+                <h3>
+                  <a href="https://github.com/Nihalmt123/Blood-Donation-Sysytem" target="_blank" rel="noopener noreferrer">
+                    Blood Donation Management
+                  </a>
+                </h3>
+                <p>Developed a system to manage donor details and blood group information, helping users find available blood donors quickly and efficiently.</p>
+              </div>
+              <a 
+                href="https://github.com/Nihalmt123/Blood-Donation-Sysytem" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="circle-btn" 
+                aria-label="View Blood Donation Management repository on GitHub"
+              >&rarr;</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDITORIAL 2-COLUMN EDUCATION & EXPERIENCE (JOURNEY) ============ -->
+    <section class="section journey-section" id="experience">
+      <div class="container">
+        <div class="journey-header">
+          <div class="journey-title-wrap">
+            <span class="sub-label">ACADEMIC &amp; INDUSTRIAL TRACK</span>
+            <div class="journey-heading-row">
+              <h2>Credentials &amp; Milestones</h2>
+              <div class="script-badge-wrap">
+                <span class="script-accent">Journey</span>
+                <span class="script-line"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="journey-grid">
+          <!-- Left Column: Education -->
+          <div class="journey-column">
+            <div class="journey-col-header">
+              <span class="col-icon">&#127891;</span>
+              <h3>EDUCATION</h3>
+            </div>
+
+            <div class="journey-list">
+              <div class="journey-entry">
+                <div class="entry-top">
+                  <span class="entry-degree">B.VOC IN MOBILE APPLICATION DEVELOPMENT</span>
+                  <span class="entry-date">2023 &ndash; Present (3rd Year)</span>
+                </div>
+                <div class="entry-role">Undergraduate Degree Program</div>
+                <div class="entry-org">Amal College of Advanced Studies &bull; University of Calicut</div>
+                <p class="entry-desc">
+                  Curriculum focused on full-stack software development, native Android engineering with Java, relational database normalization (MySQL/SQL), and NoSQL architectures (MongoDB).
+                </p>
+                <div class="entry-tags">
+                  <span>Android (Java)</span>
+                  <span>Python / Django</span>
+                  <span>SQL / MySQL</span>
+                  <span>MongoDB</span>
+                </div>
+              </div>
+
+              <div class="journey-entry">
+                <div class="entry-top">
+                  <span class="entry-degree">HIGHER SECONDARY CERTIFICATE (HSC)</span>
+                  <span class="entry-date">Completed</span>
+                </div>
+                <div class="entry-role">Science &amp; Computer Stream</div>
+                <div class="entry-org">Kerala State Board of Higher Secondary Examination</div>
+                <p class="entry-desc">
+                  Foundational coursework in computer science, algorithmic logic, mathematics, and structured procedural programming.
+                </p>
+              </div>
+
+              <div class="journey-entry">
+                <div class="entry-top">
+                  <span class="entry-degree">SECONDARY SCHOOL LEAVING CERTIFICATE (SSLC)</span>
+                  <span class="entry-date">Completed</span>
+                </div>
+                <div class="entry-role">General High School Curriculum</div>
+                <div class="entry-org">General Education Department, Government of Kerala</div>
+                <p class="entry-desc">
+                  Graduated with foundational proficiency in science, mathematics, and digital literacy.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="journey-divider" aria-hidden="true"></div>
+
+          <!-- Right Column: Experience -->
+          <div class="journey-column">
+            <div class="journey-col-header">
+              <span class="col-icon">&#128188;</span>
+              <h3>EXPERIENCE</h3>
+            </div>
+
+            <div class="journey-list">
+              <div class="journey-entry">
+                <div class="entry-top">
+                  <span class="entry-degree">PYTHON PROGRAMMING INTERN</span>
+                  <span class="entry-date">June 2026 &ndash; July 2026</span>
+                </div>
+                <div class="entry-role">Backend &amp; Full-Stack Development</div>
+                <div class="entry-org">Luminar Technolab &bull; Calicut, Kerala</div>
+                <p class="entry-desc">
+                  Completed industrial software development training in Python algorithms and Django MVT web architecture. Engineered database models, secure session authentication, and route handling for production-ready deployments.
+                </p>
+                <div class="entry-tags">
+                  <span>Python</span>
+                  <span>Django</span>
+                  <span>SQLite3</span>
+                  <span>MVT Architecture</span>
+                </div>
+              </div>
+
+              <div class="journey-entry">
+                <div class="entry-top">
+                  <span class="entry-degree">FULL-STACK PROJECT DEVELOPER</span>
+                  <span class="entry-date">2024 &ndash; Present</span>
+                </div>
+                <div class="entry-role">Academic &amp; Independent Software Projects</div>
+                <div class="entry-org">Self-Directed &bull; Amal College Labs</div>
+                <p class="entry-desc">
+                  Architected and deployed 3 full-stack systems: a Django Travel &amp; Tourism portal, a PHP/MySQL Student Record management system, and an emergency Blood Donation network.
+                </p>
+                <div class="entry-tags">
+                  <span>PHP 8.2</span>
+                  <span>MySQL</span>
+                  <span>Bootstrap</span>
+                  <span>REST / APIs</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LIVE INTERACTIVE DEVELOPER TERMINAL ============ -->
+    <section class="section terminal-section" id="terminal-section">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="sub-label">RECRUITER INTERACTION CONSOLE</span>
+          <h2>Interactive Command Line</h2>
+          <p class="section-subtext">Click any command chip below or type directly to explore developer specs in real time.</p>
+        </div>
+
+        <div class="interactive-terminal-card">
+          <div class="terminal-card-header">
+            <div class="terminal-dots">
+              <span class="t-dot red"></span>
+              <span class="t-dot yellow"></span>
+              <span class="t-dot green"></span>
+            </div>
+            <span class="terminal-title">nihal@developer-machine:~</span>
+            <span class="terminal-status-chip">bash &bull; active</span>
+          </div>
+
+          <div class="terminal-command-shortcuts">
+            <span class="cmd-label">Quick Commands:</span>
+            <button type="button" class="cmd-chip" onclick="executeTermCmd('help')">help</button>
+            <button type="button" class="cmd-chip" onclick="executeTermCmd('skills')">skills</button>
+            <button type="button" class="cmd-chip" onclick="executeTermCmd('projects')">projects</button>
+            <button type="button" class="cmd-chip" onclick="executeTermCmd('experience')">experience</button>
+            <button type="button" class="cmd-chip" onclick="executeTermCmd('contact')">contact</button>
+            <button type="button" class="cmd-chip" onclick="executeTermCmd('clear')">clear</button>
+          </div>
+
+          <div class="terminal-console-window" id="terminalLog">
+            <div class="term-line output">Type <strong>help</strong> or click any command above to inspect technical specs.</div>
+            <div class="term-line output"><span style="color:#f5b942;">&gt; Developer:</span> Mohammed Nihal MT | B.Voc Mobile App Dev | Amal College</div>
+          </div>
+
+          <div class="terminal-input-bar">
+            <span class="term-prompt">nihal@dev:~$</span>
+            <input type="text" id="terminalInput" placeholder="type 'help', 'skills', 'projects'..." autocomplete="off" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT / FOOTER BANNER ============ -->
+    <section class="section contact-section" id="contact">
+      <div class="contact-section__bg"></div>
+      <div class="container contact-section__content">
+        <div class="contact-box-left">
+          <span class="sub-label">GET IN TOUCH</span>
+          <h2>Let's build reliable software together.</h2>
+          <p>Open to software engineering internships and junior development roles across web and mobile platforms. Feel free to connect directly.</p>
+          <div class="contact-cta-row">
+            <a href="mailto:nihalmt.dev@gmail.com" class="btn btn--gold">
+              <span>Send Direct Email</span>
+              <span class="arrow">&rarr;</span>
+            </a>
+            <a 
+              href="https://www.linkedin.com/in/mohammed-nihal-mt-a9a15a426" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="btn btn--outline-pill"
+            >
+              <span>Connect on LinkedIn</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-box-right">
+          <!-- Phone Card -->
+          <div class="c-info-item">
+            <div class="c-info-icon">&#128222;</div>
+            <div class="c-info-text">
+              <small>Phone</small>
+              <div class="copy-field-wrap">
+                <a href="tel:+918129587568">+91 8129 58 7568</a>
+                <button type="button" class="copy-mini-btn" onclick="copyToClipboard('+918129587568', 'Phone number copied!')">Copy</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Email Card -->
+          <div class="c-info-item">
+            <div class="c-info-icon">&#9993;</div>
+            <div class="c-info-text">
+              <small>Direct Email</small>
+              <div class="copy-field-wrap">
+                <a href="mailto:nihalmt.dev@gmail.com">nihalmt.dev@gmail.com</a>
+                <button type="button" class="copy-mini-btn" onclick="copyToClipboard('nihalmt.dev@gmail.com', 'Email address copied!')">Copy</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Location Card -->
+          <div class="c-info-item">
+            <div class="c-info-icon">&#128205;</div>
+            <div class="c-info-text">
+              <small>Location</small>
+              <span>Manjeri, Malappuram, Kerala, India</span>
+            </div>
+          </div>
+
+          <!-- Social Links -->
+          <div class="social-links-block">
+            <span class="social-label">Connect Online &gt;</span>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/mohammed-nihal-mt-a9a15a426" target="_blank" rel="noopener" title="LinkedIn Profile">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+              </a>
+              <a href="https://github.com/Nihalmt123" target="_blank" rel="noopener" title="GitHub Profile">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+              </a>
+              <a href="mailto:nihalmt.dev@gmail.com" title="Direct Email">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>&copy; <span id="year"></span> Mohammed Nihal MT. All rights reserved.</p>
+      <div class="footer__legal">
+        <a href="https://www.linkedin.com/in/mohammed-nihal-mt-a9a15a426" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/Nihalmt123" target="_blank" rel="noopener">GitHub</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#portfolio">Projects</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
